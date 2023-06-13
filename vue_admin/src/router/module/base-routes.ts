@@ -1,5 +1,5 @@
 import BaseLayout from '../../layouts/BaseLayout.vue';
-import Login from '../../views/login/index.vue';
+import Login from '../../views/index/login.vue'; 
 
 
 export default [
@@ -104,41 +104,7 @@ export default [
         component: () => import('../../views/table/base.vue'),
         meta: { title: '查询列表', requireAuth: true },
       },
-      {
-        path: '/stock/index',
-        component: () => import('../../views/stock/index.vue'),
-        meta: { title: '股票数据', requireAuth: true ,cacheComponent: true},
-      },
-      {
-        path: '/stock/analysis',
-        component: () => import('../../views/stock/analysis.vue'),
-        meta: { title: '股票分析', requireAuth: true },
-      },
-      {
-        path: '/stock/detail',
-        component: () => import('../../views/stock/detail.vue'),
-        meta: { title: '股票详情', requireAuth: true },
-      },
-      {
-        path: '/chatNote/index',
-        component: () => import('../../views/chatNote/index.vue'),
-        meta: { title: 'chatNote', requireAuth: true },
-      },
-      {
-        path: '/chatNote/add',
-        component: () => import('../../views/chatNote/add.vue'),
-        meta: { title: '添加聊天记录', requireAuth: true },
-      },
-      {
-        path: '/chatNote/edit',
-        component: () => import('../../views/chatNote/edit.vue'),
-        meta: { title: '编辑聊天记录', requireAuth: true },
-      },
-      {
-        path: '/table/card',
-        component: () => import('../../views/table/card.vue'),
-        meta: { title: '卡片列表', requireAuth: true },
-      }
+
     ]
   },{
     path: '/form',
